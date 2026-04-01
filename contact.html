@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | PaperPrint</title>
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Contact Page Styles */
+    .contact-container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-container p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-details {
+      margin-bottom: 40px;
+    }
+
+    .contact-details div {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    form.contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form.contact-form input,
+    form.contact-form textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    form.contact-form button {
+      padding: 12px;
+      background-color: #2980B9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    form.contact-form button:hover {
+      background-color: #1d6b98;
+    }
+
+
+
+    @media (max-width: 600px) {
+      .contact-container h1 {
+        font-size: 28px;
+      }
+
+      form.contact-form input,
+      form.contact-form textarea {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation (you can reuse your existing nav code here) -->
+<header>
+    <nav>
+        <div class="mainNav">
+            <div class="logoIm">
+                <img src="IMG/PaperPrintLogo.png" alt="PaperPrint Logo" height="50px">
+            </div>
+            <div class="logo">PaperPrint</div>
+
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+            <div class="search">
+                <input type="search" placeholder="search for products" class="search">
+                <img src="IMG/searchIcon.png" alt="Search Icon" class="searchIcon" height="20px">
+            </div>
+            <div class="cart">
+                <img src="IMG/Shopping cart.png" alt="Cart Icon" class="cartImg" height="20px">
+            </div>
+
+            <div class="navLinks" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="logo-design.html">Logo Design</a>
+                <a href="marketing.html">Marketing</a>
+                <a href="sustainability.html">Sustainability</a>
+                <a href="shipping.html">Worldwide Shipping</a>
+                <a href="personalized-products.html">Personalized Products</a>
+                <a href="personalizedpackage.html">Personalized Packages</a>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Get in touch via the form below or reach us through our contact details.</p>
+
+    <div class="contact-details">
+      <div><strong>Address:</strong> Nairobi, KE</div>
+      <div><strong>Phone:</strong> 012345678</div>
+      <div><strong>Email:</strong> info@paperprint.co.ke</div>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="IMG/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="IMG/X.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <img src="IMG/insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p><strong>Contact Us:</strong></p>
+                <p>Email: <a href="info@website.com">info@PaperPrint.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+254 234 567 890</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PaperPrint. All rights reserved.</p>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
